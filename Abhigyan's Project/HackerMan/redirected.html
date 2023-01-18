@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width">
+  <style>
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+      background: #000;
+      overflow-x: hidden;
+      color: limegreen;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+  <title>You have been hacked!</title>
+</head>
+
+<body>
+  <h1>Your device had been hacked!</h1>
+  <h1 id="h1"></h1>
+  <h1 id="h"></h1>
+</body>
+<script>
+  setTimeout(() => {
+    document.getElementById("h1").innerText = "Don't Worry it was just a prank!!! Your device is not been hacked by this site :)..."
+  }, 2000)
+  setTimeout(() => {
+    document.getElementById("h").innerText = "Made by Concept It"
+  }, 5000)
+</script>
+
+</html>

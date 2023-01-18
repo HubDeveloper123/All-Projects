@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Gaming site</title>
+  <style>
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+      background: #000;
+      overflow-x: hidden;
+      color: limegreen;
+      margin: 0;
+      padding: 0;
+    }
+
+    #btn {
+      visibility: visible;
+      background: transparent;
+      color: limegreen;
+      border: 2px solid limegreen;
+      font-size: xx-large;
+      height: auto;
+      width: auto;
+      padding: 1rem;
+      cursor: pointer;
+      position: absolute;
+      top: 40vh;
+      left: 25vw;
+    }
+
+    #p {
+      font-size: xx-large;
+      width: 100%;
+    }
+
+    h1 {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="btn">
+    <button id="btn">Click here to continue (only if you dare to)</button>
+  </div>
+  <h1 id="p10"></h1>
+  <h1 id="p"></h1>
+  <h1 id="p2"></h1>
+  <h1 id="p3"></h1>
+  <h1 id="p4"></h1>
+  <h1 id="p5"></h1>
+  <h1 id="p6"></h1>
+  <h1 id="p7"></h1>
+  <h1 id="p8"></h1>
+  <h1 id="p9"></h1>
+  <script>
+    let mybtn = document.getElementById("btn");
+    let a1 = document.getElementById("p");
+    let a2 = document.getElementById("p2");
+    let a3 = document.getElementById("p3");
+    let a4 = document.getElementById("p4");
+    let a5 = document.getElementById("p5");
+    let a6 = document.getElementById("p6");
+    let a7 = document.getElementById("p7");
+    let a8 = document.getElementById("p8");
+    let a9 = document.getElementById("p9");
+    let a10 = document.getElementById("p10");
+
+    async function next() {
+      document.getElementById("btn").style.visibility = "hidden";
+      let a = confirm("Warning: This site use some things that may harm your device...Sure to want to continue?");
+      if (a == true) {
+        let promise = new Promise(function (resolve, reject) {
+          setTimeout(() => {
+            a1.innerText = "Initializing Hacking Program..."
+          }, 1000)
+          setTimeout(() => {
+            a2.innerHTML = "Initialize successfully"
+          }, 2000)
+          setTimeout(() => {
+            a3.innerHTML = "Hacking your device..."
+          }, 3000)
+          setTimeout(() => {
+            a4.innerHTML = "Cracking Password..."
+          }, 4000)
+
+          setTimeout(() => {
+            a5.innerHTML = "Password cracked successfully!"
+          }, 5000)
+          setTimeout(() => {
+            a6.innerHTML = "Granting admin permission..."
+          }, 6000)
+          setTimeout(() => {
+            a7.innerHTML = "Permission granted successfully!"
+          }, 7000)
+          setTimeout(() => {
+            a8.innerHTML = "Device hacked successfully!"
+          }, 8000)
+          setTimeout(() => {
+            a9.innerHTML = "Redirecting you..."
+            window.location.replace("redirected.html");
+          }, 9000)
+        });
+      }
+      else {
+        a10.innerText = "It's too late now!"
+        let promise = new Promise(function (resolve, reject) {
+          setTimeout(() => {
+            a1.innerText = "Initializing Hacking Program..."
+          }, 1000)
+          setTimeout(() => {
+            a2.innerHTML = "Initialize successfully"
+          }, 2000)
+          setTimeout(() => {
+            a3.innerHTML = "Hacking your device..."
+          }, 3000)
+          setTimeout(() => {
+            a4.innerHTML = "Cracking Password..."
+          }, 4000)
+
+          setTimeout(() => {
+            a5.innerHTML = "Password cracked successfully!"
+          }, 5000)
+          setTimeout(() => {
+            a6.innerHTML = "Granting admin permission..."
+          }, 6000)
+          setTimeout(() => {
+            a7.innerHTML = "Permission granted successfully!"
+          }, 7000)
+          setTimeout(() => {
+            a8.innerHTML = "Device hacked successfully!"
+          }, 8000)
+          setTimeout(() => {
+            a9.innerHTML = "Redirecting you..."
+            window.location.replace("redirected.html");
+          }, 9000)
+        });
+      }
+
+    };
+
+    mybtn.addEventListener("click", next);
+  </script>
+</body>
+
+</html>
